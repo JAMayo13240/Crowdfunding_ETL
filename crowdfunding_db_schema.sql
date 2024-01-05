@@ -5,7 +5,6 @@
 -- Modify this code to update the DB schema diagram.
 -- To reset the sample schema, replace everything with
 -- two dots ('..' - without quotes).
-
 CREATE TABLE "category" (
     "category_id" varchar(10)   NOT NULL,
     "category_name" varchar(50)   NOT NULL,
@@ -49,8 +48,8 @@ CREATE TABLE "campaign" (
     "subcategory_id" varchar(10)   NOT NULL
 );
 
-ALTER TABLE "contacts" ADD CONSTRAINT "fk_contacts_contact_id" FOREIGN KEY("contact_id")
-REFERENCES "campaign" ("contact_id");
+ALTER TABLE "campaign" ADD CONSTRAINT "fk_contacts_contact_id" FOREIGN KEY("contact_id")
+REFERENCES "contacts" ("contact_id");
 
 ALTER TABLE "campaign" ADD CONSTRAINT "fk_campaign_category_id" FOREIGN KEY("category_id")
 REFERENCES "category" ("category_id");
