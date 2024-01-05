@@ -9,4 +9,4 @@ For this project, the group has been given two datasets that is interrelated wit
 These datasets are crowdunding.xlsx and contacts.xlsx.
 The aim of this project was to clean out the dataset and appropriate the necessary data to their respective columns and saving the new organized data into their own csv files. 
 
-With these new datasets on hand, we created an SQL file to create a database that will create key relationships with the datasets using the free <a name=(https://www.quickdatabasediagrams.com)>QUICKDBD</a> tool.
+With these new datasets on hand, we created an SQL file to create a database that will create key relationships with the datasets using the free [QUICKDBD tool](https://www.quickdatabasediagrams.com).
